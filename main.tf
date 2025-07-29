@@ -9,11 +9,12 @@ terraform {
 
 provider "azurerm" {
     features {}
+ subscription_id = "23c0e86f-685e-49e7-957d-37e6b7710a17"
 }
 
 ---------------
 
-resource "azurerm_resource_group" "rgs" {
+resource "azurerm_resource_group" "pari" {
   name     = "alok"
   location = "West Europe"
 }
